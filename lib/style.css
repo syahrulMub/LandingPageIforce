@@ -1,0 +1,95 @@
+/*------ hero ------*/
+
+#hero .container {
+  color: white;
+}
+.hero {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url("/lib/source/Image/Hero.png") top center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+  z-index: 1;
+  padding-top: 70px;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+#hero h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 2;
+}
+#hero h2 {
+  margin: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 2;
+}
+
+.hero .hero-text h2 span {
+  font-size: 28px;
+  border: 2px solid rgb(31, 21, 117);
+  padding: 0 10px;
+  border-radius: 10px;
+}
+.hero .hero-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero .hero-project {
+  position: relative;
+  z-index: 2;
+}
+
+.hero .hero-text h3 {
+  font-weight: 700;
+  font-size: 36px;
+  color: transparent;
+  background-image: linear-gradient(
+    45deg,
+    rgba(24, 212, 241, 1) 0%,
+    rgba(37, 119, 221, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  z-index: 2;
+}
+#hero .hero-text p {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  z-index: 2;
+}
+
+@media (min-width: 1366px) {
+  #hero {
+    background-attachment: fixed;
+    height: auto; /* Atur ketinggian menjadi otomatis untuk tampilan mobile */
+    min-height: 100vh;
+  }
+}
