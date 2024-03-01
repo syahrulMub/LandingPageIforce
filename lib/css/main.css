@@ -15,6 +15,7 @@ section {
 .section-title h3 {
   text-align: center;
   font-size: 36px;
+  font-weight: 700;
 }
 .section-title h3 span {
   color: transparent;
@@ -92,6 +93,7 @@ about us
 #aboutus .title-aboutus h3 {
   font-size: 36px;
   padding-bottom: 30px;
+  font-weight: 700;
 }
 #aboutus .title-aboutus h3 span {
   color: transparent;
@@ -109,6 +111,7 @@ why choose us
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
   border: none;
+  border-radius: 24px;
   padding: 20px 20px 30px 20px;
 }
 .whychooseus .card:hover {
@@ -173,6 +176,7 @@ our expertize
 .ourexpertize .card {
   width: 540px;
   height: 262px;
+  border-radius: 12px;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
   border: none;
@@ -181,6 +185,11 @@ our expertize
 .ourexpertize .card:hover {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.3);
 }
+.ourexpertize .card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 12px;
+}
 .ourexpertize .card p {
   color: rgb(153, 153, 153);
 }
@@ -188,6 +197,10 @@ our expertize
 /* ----------
 technologies
  ---------- */
+.technologies {
+  background-color: #f1faff;
+}
+
 .simple-list-example-scrollspy .active {
   background-color: none;
   color: black;
