@@ -28,17 +28,17 @@
 }
 #hero h1 {
   margin: 0;
-  font-size: 30px;
+  font-size: 48px;
   font-weight: 700;
   color: rgb(255, 255, 255);
   font-family: "Poppins", sans-serif;
   position: relative;
   z-index: 2;
 }
-#hero h2 {
+#hero h4 {
   margin: 10px;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 80;
   line-height: 20px;
   color: rgb(255, 255, 255);
   font-family: "Poppins", sans-serif;
@@ -46,8 +46,8 @@
   z-index: 2;
 }
 
-.hero .hero-text h2 span {
-  font-size: 28px;
+.hero .hero-text h4 span {
+  font-size: 20px;
   border: 2px solid rgb(31, 21, 117);
   padding: 0 10px;
   border-radius: 10px;
@@ -80,6 +80,7 @@
   background-clip: text;
   z-index: 2;
 }
+
 #hero .hero-text p {
   font-size: 14px;
   color: rgb(255, 255, 255);
@@ -89,7 +90,5 @@
 @media (min-width: 1366px) {
   #hero {
     background-attachment: fixed;
-    height: auto; /* Atur ketinggian menjadi otomatis untuk tampilan mobile */
-    min-height: 100vh;
   }
 }

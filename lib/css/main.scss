@@ -38,8 +38,10 @@ section {
   scroll-behavior: smooth;
   scroll-margin: 50px;
 }
-section {
-  padding: 40px 0;
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition: 0 !important;
+  }
 }
 
 /* ----------
@@ -67,7 +69,6 @@ section {
   }
   .navbar-nav {
     .nav-item {
-      gap: 10px;
       .reach {
         background-color: #0f7888;
         border-radius: 15px;
@@ -102,10 +103,34 @@ section {
 }
 
 /* ----------
+about us
+ ---------- */
+#aboutus {
+  .title-aboutus {
+    h3 {
+      font-size: 36px;
+      padding-bottom: 30px;
+      span {
+        color: transparent;
+        background-image: linear-gradient(
+          45deg,
+          rgba(24, 212, 241, 1) 0%,
+          rgba(37, 119, 221, 1) 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+    }
+  }
+}
+
+/* ----------
 why choose us
  ---------- */
 .whychooseus {
   .card {
+    width: 360px;
+    height: 260px;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
     border: none;
@@ -129,7 +154,12 @@ why choose us
 what we do
  ---------- */
 #whatwedo {
-  background-color: rgba(24, 212, 241, 0.2);
+  .whatwedo-text {
+    h3 {
+      padding-bottom: 40px;
+    }
+  }
+
   .nav-link {
     max-width: 200px;
     white-space: normal;
@@ -170,6 +200,8 @@ our expertize
  ---------- */
 .ourexpertize {
   .card {
+    width: 540px;
+    height: 262px;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
     border: none;
@@ -207,7 +239,6 @@ technologies
   height: inherit;
 }
 .technologies p {
-  padding-top: 40px;
   padding-bottom: 60px;
 }
 #simple-list-example {
@@ -217,6 +248,7 @@ technologies
 /* ----------
 our project
  ---------- */
+
 .bestproject .row {
   padding-bottom: 40px;
   justify-content: center;
@@ -228,11 +260,11 @@ our project
 
 .bestproject-category h5 {
   color: rgba(56, 76, 255, 1);
-  font-size: 14px; /* Sesuaikan ukuran font dengan kebutuhan Anda */
+  font-size: 14px;
   margin: 0;
-  padding: 5px 10px; /* Sesuaikan padding dengan kebutuhan Anda */
-  border-radius: 4px; /* Membuat ujung border menjadi lebih bulat */
-  margin-right: 5px; /* Jarak antara setiap hashtag */
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: 5px;
   background-color: rgba(41, 231, 231, 0.2);
 }
 
@@ -240,12 +272,20 @@ our project
   transform: scale(1.1, 1.1);
 }
 .bestproject .project-image img {
+  border-radius: 20px;
   transition: all ease-in-out 0.3s;
   transform-origin: center;
+  width: 100%;
 }
+
 /* ----------
 client
  ---------- */
+.ourclient {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 
 /* ----------
 career
@@ -319,8 +359,8 @@ jobvacancy
 }
 
 .icon-container i {
-  float: right; /* Menggeser ikon ke kanan */
-  font-size: 40px; /* Ubah ukuran ikon */
+  float: right;
+  font-size: 40px;
 }
 
 /* ----------
@@ -336,7 +376,7 @@ contact us
   margin: 0;
   padding: 5px 10px;
   margin-right: 5px;
-  border: 1px solid #0aa5bd; /* Tambahkan border dengan ketebalan 1px dan warna #0aa5bd */
+  border: 1px solid #0aa5bd;
   border-radius: 5px;
   margin-bottom: 8px;
 }
