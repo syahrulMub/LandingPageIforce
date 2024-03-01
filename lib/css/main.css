@@ -131,6 +131,12 @@ why choose us
 /* ----------
 what we do
  ---------- */
+#whatwedo {
+  color: white;
+}
+#whatwedo .whatwedo-text {
+  padding: 150px 0 150px 0;
+}
 #whatwedo .whatwedo-text h3 {
   padding-bottom: 40px;
 }
@@ -168,6 +174,10 @@ what we do
 }
 .whatwedo .row .simple-list-example {
   padding-bottom: 30px;
+}
+
+#pills-home {
+  background-image: url("/lib/source/Image/content-1.png");
 }
 
 /* ----------
@@ -234,6 +244,12 @@ technologies
 /* ----------
 our project
  ---------- */
+.bestproject h2 {
+  font-weight: 700;
+  font-size: 36px;
+  padding-bottom: 12px;
+}
+
 .bestproject .row {
   padding-bottom: 40px;
   justify-content: center;
@@ -284,11 +300,12 @@ career
   transform: translate(50%, 0);
 }
 .career .career-item h5 {
-  font-weight: 400;
+  font-weight: 700;
   margin-top: 20px;
 }
 .career .career-item p {
   color: rgb(153, 153, 153);
+  font-size: 14px;
 }
 
 /* ----------
@@ -342,12 +359,17 @@ jobvacancy
 
 .icon-container i {
   float: right;
-  font-size: 40px;
+  font-size: 24px;
+  align-items: center;
 }
 
 /* ----------
 contact us
  ---------- */
+.contactus {
+  background-image: url("/lib/source/Image/contact-us-1.png");
+  padding-bottom: 165px;
+}
 .contactus .jobtype {
   display: flex;
 }
