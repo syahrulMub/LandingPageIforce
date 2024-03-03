@@ -1,6 +1,17 @@
 /* ----------
 global 
  ---------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+$font-jakarta-plus: "Plus Jakarta Sans", sans-serif;
+$background-wish-blue: linear-gradient(
+  88.76deg,
+  #18d4f1 12.36%,
+  #2577dd 73.63%
+);
+
 section {
   padding-bottom: 50px;
   padding-top: 40px;
@@ -13,8 +24,9 @@ section {
   padding: 40px 0 40px 0;
   h3 {
     text-align: center;
-    font-size: 36px;
+    font-size: 44px;
     font-weight: 700;
+    font-family: "inter", sans-serif;
     span {
       color: transparent;
       background-image: linear-gradient(
@@ -29,6 +41,9 @@ section {
   p {
     text-align: center;
     color: rgba(153, 153, 153, 1);
+    font-family: $font-jakarta-plus;
+    font-size: 14px;
+    font-weight: 400;
   }
 }
 .section-title h2 {
@@ -39,9 +54,33 @@ section {
   scroll-behavior: smooth;
   scroll-margin: 50px;
 }
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition: 0 !important;
+  }
+}
+.mini-info {
+  background: linear-gradient(
+    86.47deg,
+    rgba(41, 231, 231, 0.2) -3.64%,
+    rgba(32, 41, 255, 0.2) 99.64%
+  );
+  padding: 5px 8px 5px 8px;
+  border: 5px;
+  border-radius: 8px;
+  img {
+    margin-right: 4px;
+    width: 14px;
+  }
+  h6 {
+    color: rgba(56, 76, 255, 1);
+    margin: 0;
+    font-size: 14px;
   }
 }
 
@@ -49,21 +88,25 @@ section {
  header 
  ---------- */
 
-.navbar {
-  a {
-    color: white;
-  }
-  background-color: rgb(65, 65, 65);
-}
-
 .navbar .nav-item .active,
 .nav-link:focus {
   color: rgb(180, 118, 2);
 }
 
+.topbar-scrolled {
+  background-color: black !important;
+  transition: background-color 0.25s;
+}
+
 .navbar {
-  padding-bottom: 10px;
-  justify-content: center;
+  // padding-bottom: 10px;
+  // justify-content: center;
+  background-color: rgb(65, 65, 65, 0);
+  a {
+    color: white;
+    font-family: $font-jakarta-plus;
+    font-weight: 700;
+  }
   img {
     width: 96.89px;
     height: 48px;
@@ -73,11 +116,6 @@ section {
       .reach {
         background-color: #0f7888;
         border-radius: 15px;
-      }
-      a {
-        font-weight: 500;
-        padding-left: 10px;
-        padding-right: 10px;
       }
       .active {
         color: transparent;
@@ -123,6 +161,11 @@ about us
         background-clip: text;
       }
     }
+    p {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+    }
   }
 }
 
@@ -131,58 +174,94 @@ why choose us
  ---------- */
 .whychooseus {
   .card {
-    width: 360px;
-    height: 260px;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
     border: none;
     border-radius: 24px;
-    padding: 20px 20px 30px 20px;
     &:hover {
+      // TODO: Box Shadow Miring
       box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.3);
+      transform: rotate(3deg);
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
-  }
-  .choose-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    img {
+      width: 56px;
+      height: 56px;
+      margin-bottom: 16px;
+    }
+    h4 {
+      font-family: "Inter", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
     p {
-      text-align: center;
+      font-family: "Plus Jakarta Sans", sans-serif;
       font-size: 16px;
+      font-weight: 500;
     }
   }
+  // .card {
+  //   width: 360px;
+  //   height: 260px;
+  //   background: rgba(255, 255, 255, 0.5);
+  //   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+  //   border: none;
+  //   border-radius: 24px;
+  //   padding: 20px 20px 30px 20px;
+  //   &:hover {
+  //     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.3);
+  //   }
+  // }
+  // .choose-item {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  //   p {
+  //     text-align: center;
+  //     font-size: 16px;
+  //     font-family: "Plus Jakarta Sans", sans-serif;
+  //   }
+  // }
 }
 /* ----------
 what we do
  ---------- */
 #whatwedo {
-  color: white;
   .whatwedo-text {
-    padding: 150px 0 150px 0;
+    padding-left: 150px;
+    padding-right: 50px;
     h3 {
       padding-bottom: 40px;
+      color: white;
+    }
+    p {
+      color: white;
     }
   }
 
   .nav-link {
+    font-family: "Plus Jakarta Sans", sans-serif;
     max-width: 200px;
     white-space: normal;
     text-align: center;
     color: black;
-    font-weight: 500;
+    font-weight: 400;
     &.active {
       position: relative;
       background-color: transparent !important;
+      font-weight: 700;
       &::after {
         content: "";
         position: absolute;
         bottom: 0;
         left: 50%;
         width: 50%;
-        height: 2px;
-        background-color: #0aa5bd !important;
+        height: 5px;
+        background: linear-gradient(88.76deg, #18d4f1 12.36%, #2577dd 73.63%);
         transform: translateX(-50%);
+        border-radius: 20px;
       }
     }
   }
@@ -194,8 +273,6 @@ what we do
 }
 
 .whatwedo .row {
-  justify-content: center;
-  align-items: center;
   .simple-list-example {
     padding-bottom: 30px;
   }
@@ -207,14 +284,17 @@ what we do
 our expertize
  ---------- */
 .ourexpertize {
+  .section-title h3 {
+    text-align: left;
+  }
   .card {
-    width: 540px;
-    height: 262px;
+    height: 100%;
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
     border: none;
     padding: 20px 20px 30px 20px;
+    font-family: "Inter", sans-serif;
     &:hover {
       box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.3);
     }
@@ -234,26 +314,46 @@ technologies
  ---------- */
 .technologies {
   background-color: #f1faff;
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+  }
 }
 .simple-list-example-scrollspy .active {
   background-color: none;
   color: black;
-  font-size: 36px;
+  font-size: 50px;
+  font-weight: 700;
+  &::after {
+    content: "\2192";
+    margin-left: 16px;
+  }
 }
 
 .technologies a {
   color: rgb(163, 163, 163, 0.8);
-  font-weight: 700;
-  font-size: 28px;
+  font-weight: 400;
+  font-size: 48px;
   text-decoration: none;
+  span {
+    padding-left: 20px;
+  }
 }
 
-#simple-list-item-1 img,
-#simple-list-item-2 img,
-#simple-list-item-3 img,
-#simple-list-item-4 img {
-  width: 50%;
-  height: inherit;
+#simple-list-item-1,
+#simple-list-item-2,
+#simple-list-item-3,
+#simple-list-item-4 {
+  img {
+    width: 50%;
+    height: inherit;
+    margin-bottom: 12px;
+  }
+
+  .col-lg-4 img {
+    margin-bottom: 56px;
+  }
 }
 .technologies p {
   padding-bottom: 60px;
@@ -263,7 +363,7 @@ technologies
   opacity: 1;
 }
 /* ----------
-our project
+best project
  ---------- */
 .bestproject h2 {
   font-weight: 700;
@@ -274,9 +374,13 @@ our project
   padding-bottom: 40px;
   justify-content: center;
   align-items: center;
+  p {
+    font-size: 14px;
+  }
 }
 .bestproject-category {
   display: flex;
+  padding-bottom: 16px;
 }
 
 .bestproject-category h5 {
@@ -303,9 +407,15 @@ our project
 client
  ---------- */
 .ourclient {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
+  .client-pict {
+    margin: 0 auto;
+  }
+  .col-lg-3 {
+    padding-bottom: 32px;
+  }
 }
 
 /* ----------
@@ -391,6 +501,7 @@ contact us
  ---------- */
 .contactus {
   background-image: url("/lib/source/Image/contact-us-1.png");
+  color: rgb(255, 255, 255);
   padding-bottom: 165px;
   .jobtype {
     display: flex;
@@ -398,7 +509,7 @@ contact us
 }
 
 .contactus .jobtype h5 {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 14px;
   margin: 0;
   padding: 5px 10px;

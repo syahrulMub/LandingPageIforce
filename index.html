@@ -14,7 +14,43 @@
 
 <body>
     <header id="header" class="header">
-        <div id="navbar" class="navbar fixed-top navbar-expand-lg bg-body-dark">
+        <nav class="navbar navbar-expand-lg bg-transparent fixed-top" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="lib/source/Image/logo.png" alt="iforce-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link scrollto active" href="#aboutus">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#whatwedo">What We Do</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#ourexpertize">Our Expertize</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#bestproject">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#career">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="reach">
+                                <a class="nav-link scrollto" href="#contactus">Reach Us Now</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- <div id="navbar" class="navbar navbar-expand-lg bg-body-dark">
             <div class="container align-items-center">
                 <img src="lib/source/Image/logo.png" alt="iforce-logo">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
@@ -46,33 +82,29 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
     </header>
     <section id="hero" class="hero">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="hero-text" data-aos="fade-up" data-aos-delay="400">
-                        <h1>Software Consulting Development</h1>
-                        <br></br>
-                        <h4>Simplest way to <span>Create</span> your dream business</h4>
-                        <div class="row" data-aos="fade-up" data-aos-delay="600">
-                            <div class="hero-project col-lg-4 col-4">
-                                <h3>22+</h3>
-                                <p>Years of experience</p>
-                            </div>
-                            <div class="hero-project col-lg-4 col-4">
-                                <h3>300+</h3>
-                                <p>Project completed</p>
-                            </div>
-                            <div class="hero-project col-lg-4 col-4">
-                                <h3>80+</h3>
-                                <p>Happy client</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="hero-text" data-aos="fade-up" data-aos-delay="400">
+                <h1 class="mb-5">Software Consulting Development</h1>
+                <h4 class="mb-5">Simplest way to <span>Create</span> your dream business</h4>
+            </div>
+            <div class="d-flex justify-content-center gap-3" data-aos="fade-up" data-aos-delay="600">
+                <div class="hero-project">
+                    <h3>22+</h3>
+                    <p>Years of experience</p>
+                </div>
+                <div class="hero-project">
+                    <h3>300+</h3>
+                    <p>Project completed</p>
+                </div>
+                <div class="hero-project">
+                    <h3>80+</h3>
+                    <p>Happy client</p>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <section id="aboutus" class="aboutus">
@@ -82,8 +114,14 @@
                     <img src="lib/source/Image/img.png" alt="about iforce" style="height:100%; width: 100%;">
                 </div>
                 <div class="col-lg-7 col-12">
+                    <div class="mini-info d-inline-flex">
+                        <div class="d-flex justify-content-center align-center">
+                            <img src="lib/source/Icon/icon.png" alt="">
+                            <h6>About Us</h6>
+                        </div>
+                    </div>
                     <div class="title-aboutus" data-aos="fade-up" data-aos-delay="200">
-                        <h3>More than <span>Two Decades</span> of Business Software Consulting and
+                        <h3>More than <span>Two Decades</span> of <br />Business Software Consulting and
                             Development</h3>
                     </div>
                     <p data-aos="fade-up">Iforce Consulting is a Business Information Technology firm with customers in
@@ -94,8 +132,9 @@
                         distinct and measurable. The quality of our work incorporates these values in our deliverables,
                         from high level
                         strategic IT consulting to custom business software development and operations support after
-                        rollout. </p>
-                    <p>Our company has an excellent record in serving multi business sectors, in the areas of Financial
+                        rollout. <br /> </p>
+                    <p data-aos="fade-up">Our company has an excellent record in serving multi business sectors, in the
+                        areas of Financial
                         services and insurance,
                         Heavy Equipment and Mining, Food and Beverage (F&B), and cross industry.</p>
                 </div>
@@ -104,34 +143,49 @@
     </section>
     <section id="whychooseus" class="whychooseus">
         <div class="container">
-            <div class="section-title" data-aos="fade-up">
-                <h3>Why Iforce Consulting Indonesia is your <span>Best Choice</span></h3>
+            <div class="section-title text-center" data-aos="fade-up">
+                <div class="mini-info d-inline-flex">
+                    <div class="d-flex justify-content-center align-center">
+                        <img src="lib/source/Icon/icon.png" alt="">
+                        <h6>Why Choose Us</h6>
+                    </div>
+                </div>
+                <h3>Why Iforce Consulting Indonesia <br />is your <span>Best Choice</span></h3>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-12" data-aos="fade-right" data-aos-delay="200">
-                    <div class="card choose-item">
-                        <img src="lib/source/Icon/diagram.gif" style="width: 56px; height: 56px;">
-                        <h4>Realiable Partner</h4>
-                        <p>With 20+ years, 1,100+ projects, and proven processes, choose us for swift design,
-                            development, integration, testing,
-                            and deployment of custom apps</p>
+                    <div class="card choose-item h-100">
+                        <div class="card-body text-center">
+                            <img src="lib/source/Icon/diagram.gif">
+                            <h4>Realiable Partner</h4>
+                            <p>With 20+ years, 1,100+ projects, and proven processes, choose us for swift design,
+                                development, integration, testing,
+                                and deployment of custom apps
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-12" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card choose-item">
-                        <img src="lib/source/Icon/medal- (1).gif" style="width: 56px; height: 56px;">
-                        <h4>High Quality</h4>
-                        <p>We are committed to delivering robust, elegant and adaptable solutions that are simple to use
-                            and easy to maintain.</p>
+                    <div class="card choose-item h-100">
+                        <div class="card-body text-center">
+                            <img src="lib/source/Icon/medal- (1).gif">
+                            <h4>High Quality</h4>
+                            <p>We are committed to delivering robust, elegant and adaptable solutions that are simple to
+                                use
+                                and easy to maintain.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-12" data-aos="fade-left" data-aos-delay="200">
-                    <div class="card choose-item">
-                        <img src="lib/source/Icon/idea.gif" style="width: 56px; height: 56px;">
-                        <h4>One-Stop Solution</h4>
-                        <p>We provide services for all your unique requirements, be it individual resources, dedicated
-                            teams or turnkey projects -
-                            we ensure remarkable results.</p>
+                    <div class="card choose-item h-100">
+                        <div class="card-body text-center">
+                            <img src="lib/source/Icon/idea.gif">
+                            <h4>One-Stop Solution</h4>
+                            <p>We provide services for all your unique requirements, be it individual resources,
+                                dedicated
+                                teams or turnkey projects -
+                                we ensure remarkable results.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -139,11 +193,17 @@
     </section>
     <section id="whatwedo" class="whatwedo" data-aos="fade-up" data-aos-delay="10">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title text-center">
+                <div class="mini-info d-inline-flex">
+                    <div class="d-flex justify-content-center align-center">
+                        <img src="lib/source/Icon/icon.png" alt="">
+                        <h6>What We Do</h6>
+                    </div>
+                </div>
                 <h3>Innovative Digital Strategies at your <span>Service</span></h3>
             </div>
             <div class="row">
-                <div class="col ">
+                <div class="col">
                     <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
@@ -176,9 +236,9 @@
         <div class="tab-content " id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
                 tabindex="0" data-aos="fade-up" data-aos-delay="100">
-                <div class="container">
-                    <div class="row">
-                        <div class="whatwedo-text col-lg-6 col-12">
+                <div class="row">
+                    <div class="col-12 col-lg-6 align-self-center">
+                        <div class="whatwedo-text">
                             <h3>Digital Platform Development</h3>
                             <p>Either you are looking to launch a new online venture, revolutionise the way your
                                 business operates by using digital or to upgrade your tech architecture from a rigid
@@ -189,9 +249,9 @@
                             <p>With our digital development team expertise and your creative and ambituos vision, we
                                 can create a robust ecosystem of integrated solutions and service providers.</p>
                         </div>
-                        <div class="col-lg-6 col-12">
-                            <!-- <img src="lib/source/Image/image 1.png" alt="what we do" style="width: 100%; height:70%;"> -->
-                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 p0">
+                        <img src="lib/source/Image/image 1.png" alt="what we do" class="w-100 h-100">
                     </div>
                 </div>
             </div>
@@ -251,67 +311,137 @@
     <section id="ourexpertize" class="ourexpertize">
         <div class="container">
             <div class="section-title">
+                <div class="mini-info d-inline-flex">
+                    <div class="d-flex justify-content-center align-center">
+                        <img src="lib/source/Icon/icon.png" alt="">
+                        <h6>Our Expertize</h6>
+                    </div>
+                </div>
                 <h3>Enabling Your Journey To Digital <span>Transformation</span></h3>
             </div>
-            <div class="row mx-auto">
-                <div class="col-lg-6 mb-2">
+            <div class="row row-gap-4">
+                <div class="col-lg-6">
                     <div class="card" data-aos="fade-right" data-aos-delay="30">
-                        <img src="lib/source/Icon/consultation.gif" alt="software-consulting"
-                            style="width: 64px; width: 64px;">
-                        <div class="expertize-text-detail">
-                            <h4>Software Consulting</h4>
-                            <p>We gather and analyze your business needs, conceptualize software to cover them, and help
-                                you get the best value from its development.</p>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <img src="lib/source/Icon/consultation.gif" alt="software-consulting"
+                                        style="width: 64px; width: 64px;">
+                                </div>
+                                <div class="col">
+                                    <h4>Software Consulting</h4>
+                                    <p>We gather and analyze your business needs, conceptualize software to cover
+                                        them, and help
+                                        you get the best value from its development.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mb-4">
+                <div class="col-lg-6">
                     <div class="card" data-aos="fade-left" data-aos-delay="30">
-                        <img src="lib/source/Icon/mobile-app.gif" alt="software-consulting"
-                            style="width: 64px; width: 64px;">
-                        <h4>Mobile Development</h4>
-                        <p>Building on the expertise from 100+ completed mobile projects, we can deliver mobile apps for
-                            any platform and cover industry specifics. Our Mobile Application Design and Development
-                            incorporate reusable code across platforms, support for offline scenarios, and access to
-                            native device APIs.</p>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <img src="lib/source/Icon/mobile-app.gif" alt="software-consulting"
+                                        style="width: 64px; width: 64px;">
+                                </div>
+                                <div class="col">
+                                    <h4>Mobile Development</h4>
+                                    <p>Building on the expertise from 100+ completed mobile projects, we can deliver
+                                        mobile apps for
+                                        any platform and cover industry specifics. Our Mobile Application Design and
+                                        Development
+                                        incorporate reusable code across platforms, support for offline scenarios, and
+                                        access to
+                                        native device APIs.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mb-4">
+                <div class="col-lg-6">
                     <div class="card" data-aos="fade-right" data-aos-delay="60">
-                        <img src="lib/source/Icon/html.gif" alt="software-consulting" style="width: 64px; width: 64px;">
-                        <h4>Web Development</h4>
-                        <p>Since 2001, our team has been expertly crafting a diverse range of customer-facing and
-                            corporate web-based applications. With a rich history of innovation, we continually push
-                            boundaries to deliver tailor-made with your unique business needs and objectives</p>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <img src="lib/source/Icon/html.gif" alt="software-consulting"
+                                        style="width: 64px; width: 64px;">
+
+                                </div>
+                                <div class="col">
+                                    <h4>Web Development</h4>
+                                    <p>Since 2001, our team has been expertly crafting a diverse range of
+                                        customer-facing and
+                                        corporate web-based applications. With a rich history of innovation, we
+                                        continually push
+                                        boundaries to deliver tailor-made with your unique business needs and objectives
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <div class="col-lg-6 mb-4">
+                <div class="col-lg-6">
                     <div class="card" data-aos="fade-left" data-aos-delay="60">
-                        <img src="lib/source/Icon/api.gif" alt="software-consulting" style="width: 64px; width: 64px;">
-                        <h4>API Development & Software Integration</h4>
-                        <p>We leverage API-driven development to seamlessly integrate custom software with both
-                            corporate and third-party systems and services,ensuring a cohesive and efficient
-                            technological ecosystem for your business needs</p>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <img src="lib/source/Icon/api.gif" alt="software-consulting"
+                                        style="width: 64px; width: 64px;">
+
+                                </div>
+                                <div class="col">
+                                    <h4>API Development & Software Integration</h4>
+                                    <p>We leverage API-driven development to seamlessly integrate custom software with
+                                        both
+                                        corporate and third-party systems and services,ensuring a cohesive and efficient
+                                        technological ecosystem for your business needs</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <div class="col-lg-6 mb-4">
+                <div class="col-lg-6">
                     <div class="card" data-aos="fade-right" data-aos-delay="90">
-                        <img src="lib/source/Icon/mobile.gif" alt="software-consulting"
-                            style="width: 64px; width: 64px;">
-                        <h4>Database Design and Development</h4>
-                        <p>We assist in structuring raw data optimally to facilitate efficient analysis and informed
-                            decision-making processes, ensuring your data becomes a valuable asset in driving successful
-                            and strategic business outcomes</p>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <img src="lib/source/Icon/mobile.gif" alt="software-consulting"
+                                        style="width: 64px; width: 64px;">
+                                </div>
+                                <div class="col">
+                                    <h4>Database Design and Development</h4>
+                                    <p>We assist in structuring raw data optimally to facilitate efficient analysis and
+                                        informed
+                                        decision-making processes, ensuring your data becomes a valuable asset in
+                                        driving successful
+                                        and strategic business outcomes</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <div class="col-lg-6 mb-4">
+                <div class="col-lg-6">
                     <div class="card" data-aos="fade-left" data-aos-delay="90">
-                        <img src="lib/source/Icon/statistics.gif" alt="software-consulting"
-                            style="width: 64px; width: 64px;">
-                        <h4>Data Analytics Capability Build</h4>
-                        <p>We help our clients plan future business actions based on historica
-                            insights by providing custom build business analytics solutions
-                            include data aggregation, analysis, and reporting.</p>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <img src="lib/source/Icon/statistics.gif" alt="software-consulting"
+                                        style="width: 64px; width: 64px;">
+                                </div>
+                                <div class="col">
+                                    <h4>Data Analytics Capability Build</h4>
+                                    <p>We help our clients plan future business actions based on historica
+                                        insights by providing custom build business analytics solutions
+                                        include data aggregation, analysis, and reporting.</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -319,29 +449,29 @@
     </section>
     <section id="technologies" class="technologies">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title text-center">
+                <div class="mini-info d-inline-flex  ">
+                    <div class="d-flex justify-content-center align-center">
+                        <img src="lib/source/Icon/icon.png" alt="">
+                        <h6>Technologies</h6>
+                    </div>
+                </div>
                 <h3>Technologies and Platforms We Work with</h3>
-                <p>The diverse array of technologies and platforms that we are proficient
+                <p>The diverse array of technologies and platforms that we are proficient <br />
                     in handling and collaborating with</p>
             </div>
             <div class="row overflow-auto">
                 <div class="col-lg-4 col-12" data-aos="fade-right" data-aos-delay="100">
                     <div id="simple-list-example"
                         class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
-                        <a class="p-1 rounded active" href="#simple-list-item-1">Back end</a>
+                        <a class="p-1 rounded text-with-arrow active" href="#simple-list-item-1">Back end</a>
                         <a class="p-1 rounded" href="#simple-list-item-2">Front end</a>
                         <a class="p-1 rounded" href="#simple-list-item-3">Mobile</a>
                         <a class="p-1 rounded" href="#simple-list-item-4">Cloud</a>
                     </div>
-                    <!-- <div id="simple-list-example"
-                        class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
-                        <span class="p-1 rounded active" id="simple-list-item-1">Back end</span>
-                        <span class="p-1 rounded " id="simple-list-item-2">Front end</span>
-                        <span class="p-1 rounded " id="simple-list-item-3">Mobile</span>
-                        <span class="p-1 rounded " id="simple-list-item-4">Cloud</span>
-                    </div> -->
                 </div>
-                <div class="col-lg-8 col-12" style="max-height: 300px; overflow-y: auto;">
+                <div class="col-lg-5 col-12 order-lg-last"
+                    style="max-height: 480px; overflow-y: auto; margin-left: auto; scrollbar-width: none;">
                     <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0"
                         data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0" data-aos="fade-down"
                         data-aos-delay="100">
@@ -450,11 +580,16 @@
     </section>
     <section id="bestproject" class="bestproject">
         <div class="container">
-            <div class="section-title" data-aos="fade-up" data-aos-delay="0">
+            <div class="section-title  text-center" data-aos="fade-up" data-aos-delay="0">
+                <div class="mini-info d-inline-flex">
+                    <div class="d-flex justify-content-center align-center">
+                        <img src="lib/source/Icon/icon.png" alt="">
+                        <h6>Best Project</h6>
+                    </div>
+                </div>
                 <h3>Apps We`ve <span>Developed</span></h3>
                 <p>Since 2001 we have managed to refine and perfect successful
-                    implementation practices. All this
-                    experience is offered to our clients in
+                    implementation practices. All this <br /> experience is offered to our clients in
                     ongoing relationships.</p>
             </div>
             <div class="row">
@@ -515,67 +650,65 @@
     </section>
     <section id="ourclient" class="ourclient">
         <div class="container">
-            <div class="section-title" data-aos="fade-up">
+            <div class="section-title text-center" data-aos="fade-up">
+                <div class="mini-info d-inline-flex">
+                    <div class="d-flex justify-content-center align-center">
+                        <img src="lib/source/Icon/icon.png" alt="">
+                        <h6>Our Client</h6>
+                    </div>
+                </div>
                 <h3>Outstanding Iforce <span>Client</span></h3>
             </div>
             <div class="row">
-                <div class="col-lg-1">
-                </div>
-                <div class="col-lg-10">
-                    <div class="row" data-aos="zoom-in-down" data-aos-delay="100">
-                        <div class="col-lg-3 col-md-4 col-6">
-                            <img src="lib/source/Clients/Trakindo.png" alt="truct indo"
-                                style="width: 160px; height: 80px;">
+                <div class="col-lg-10 client-pict">
+                    <div class="row justify-content-center text-center" data-aos="zoom-in-down" data-aos-delay="100">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <img src="lib/source/Clients/Trakindo.png" alt="truct indo" style=" height: 80px;">
                         </div>
-                        <div class="col-lg-3 col-md-4 col-6">
-                            <img src="lib/source/Clients/BCA life.png" alt="truct indo"
-                                style="width: 160px; height: 80px;">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <img src="lib/source/Clients/BCA life.png" alt="truct indo" style=" height: 80px;">
                         </div>
-                        <div class="col-lg-3 col-md-4 col-6">
-                            <img src="lib/source/Clients/Axa finance.png" alt="truct indo"
-                                style="width: 160px; height: 80px;">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <img src="lib/source/Clients/Axa finance.png" alt="truct indo" style=" height: 80px;">
                         </div>
-                        <div class="col-lg-3 col-md-4 col-6">
-                            <img src="lib/source/Clients/Bank mega.png" alt="truct indo"
-                                style="width: 160px; height: 80px;">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <img src="lib/source/Clients/Bank mega.png" alt="truct indo" style=" height: 80px;">
                         </div>
-                        <div class="col-lg-3 col-md-4 col-6">
-                            <img src="lib/source/Clients/Frisian flag.png" alt="truct indo"
-                                style="width: 160px; height: 80px;">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <img src="lib/source/Clients/Frisian flag.png" alt="truct indo" style=" height: 80px;">
                         </div>
-                        <div class="col-lg-3 col-md-4 col-6">
-                            <img src="lib/source/Clients/Japfa.png" alt="truct indo"
-                                style="width: 160px; height: 80px;">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <img src="lib/source/Clients/Japfa.png" alt="truct indo" style=" height: 80px;">
                         </div>
-                        <div class="col-lg-3 col-md-4 col-6">
-                            <img src="lib/source/Clients/FWD.png" alt="truct indo" style="width: 160px; height: 80px;">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <img src="lib/source/Clients/FWD.png" alt="truct indo" style=" height: 80px;">
                         </div>
-                        <div class="col-lg-3 col-md-4 col-6">
-                            <img src="lib/source/Clients/Yokke.png" alt="truct indo"
-                                style="width: 160px; height: 80px;">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <img src="lib/source/Clients/Yokke.png" alt="truct indo" style=" height: 80px;">
                         </div>
-                        <div class="col-lg-4 col-md-4 col-6 align-self-center">
-                            <img src="lib/source/Clients/Yanmar.png" alt="truct indo"
-                                style="width: 160px; height: 80px;">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <img src="lib/source/Clients/Yanmar.png" alt="truct indo" style=" height: 80px;">
                         </div>
-                        <div class="col-lg-4 col-md-4 col-6 align-self-center">
-                            <img src="lib/source/Clients/Indoloka.png" alt="truct indo"
-                                style="width: 160px; height: 80px;">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <img src="lib/source/Clients/Indoloka.png" alt="truct indo" style=" height: 80px;">
                         </div>
-                        <div class="col-lg-4 col-md-4 col-6 align-self-center">
-                            <img src="lib/source/Clients/Topkarir.png" alt="truct indo"
-                                style="width: 160px; height: 80px;">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <img src="lib/source/Clients/Topkarir.png" alt="truct indo" style=" height: 80px;">
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-1">
                 </div>
             </div>
         </div>
     </section>
     <section id="career" class="career">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <div class="section-title">
+            <div class="section-title text-center">
+                <div class="mini-info d-inline-flex">
+                    <div class="d-flex justify-content-center align-center">
+                        <img src="lib/source/Icon/icon.png" alt="">
+                        <h6>Our Client</h6>
+                    </div>
+                </div>
                 <h3>Grow Together With Us</h3>
             </div>
             <div class="row justify-content-center">
@@ -647,8 +780,8 @@
             <div class="section-title">
                 <h3>Job Vacancy</h3>
             </div>
-            <div class="row" data-aos="fade-up" data-aos-delay="100">
-                <div class="col-lg-6 col-md-4 col-12">
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-12 col-md-4 col-lg-4">
                     <div class="filter">
                         <h3>Filter By</h3>
                         <div class="mb-3">
@@ -679,7 +812,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-8 col-12">
+                <div class=" col-12 col-md-8 col-lg-5">
                     <a href="https://www.jobstreet.co.id/id/iForce-Consulting-Indonesia-jobs?jobId=73461488&type=standout"
                         target="_blank" class="career-card-link ">
                         <div class="career-card mb-2">

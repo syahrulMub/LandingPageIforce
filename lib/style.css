@@ -1,5 +1,8 @@
 /*------ hero ------*/
 
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 #hero .container {
   color: white;
 }
@@ -29,6 +32,7 @@
 #hero h1 {
   margin: 0;
   font-size: 48px;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   color: rgb(255, 255, 255);
   font-family: "Poppins", sans-serif;
@@ -44,6 +48,9 @@
   font-family: "Poppins", sans-serif;
   position: relative;
   z-index: 2;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
 }
 
 .hero .hero-text h4 span {
@@ -53,6 +60,7 @@
   border-radius: 10px;
 }
 .hero .hero-text {
+  font-family: "Inter", sans-serif;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -67,9 +75,9 @@
   z-index: 2;
 }
 
-.hero .hero-text h3 {
+.hero h3 {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 48px;
   color: transparent;
   background-image: linear-gradient(
     45deg,
@@ -83,8 +91,12 @@
 
 #hero .hero-text p {
   font-size: 14px;
+
   color: rgb(255, 255, 255);
   z-index: 2;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 @media (min-width: 1366px) {
