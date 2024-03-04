@@ -13,7 +13,7 @@ $background-wish-blue: linear-gradient(
 );
 
 section {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   padding-top: 40px;
 }
 
@@ -113,9 +113,13 @@ section {
   }
   .navbar-nav {
     .nav-item {
-      .reach {
-        background-color: #0f7888;
-        border-radius: 15px;
+      .reach a {
+        background: $background-wish-blue;
+        border-radius: 100px;
+        padding: 8px 16px;
+        &:hover {
+          color: white;
+        }
       }
       .active {
         color: transparent;
@@ -180,7 +184,7 @@ why choose us
     border-radius: 24px;
     &:hover {
       // TODO: Box Shadow Miring
-      box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 24px 0 rgba(194, 194, 194, 0.3);
       transform: rotate(3deg);
       transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
@@ -293,7 +297,7 @@ our expertize
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
     border: none;
-    padding: 20px 20px 30px 20px;
+    // padding: 15px 15px 15px 15px;
     font-family: "Inter", sans-serif;
     &:hover {
       box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.3);
@@ -303,8 +307,9 @@ our expertize
       font-weight: 700;
       padding-top: 12px;
     }
-    p {
+    .card-body p {
       color: rgba(153, 153, 153, 1);
+      font-size: 14px;
     }
   }
 }
@@ -388,9 +393,13 @@ best project
   font-size: 14px;
   margin: 0;
   padding: 5px 10px;
-  border-radius: 4px;
+  border-radius: 8px;
   margin-right: 5px;
-  background-color: rgba(41, 231, 231, 0.2);
+  background: linear-gradient(
+    86.47deg,
+    rgba(41, 231, 231, 0.2) -3.64%,
+    rgba(32, 41, 255, 0.2) 99.64%
+  );
 }
 
 .bestproject .project-image:hover img {
@@ -422,8 +431,12 @@ client
 career
  ---------- */
 .career {
+  p {
+    font-size: 14px;
+    padding-bottom: 32px;
+  }
   .career-item {
-    padding-bottom: 20px;
+    // padding-bottom: 8px;
     img {
       transform: translate(50%, 0);
     }
@@ -431,16 +444,30 @@ career
       // position: absolute;
       font-weight: 700;
       margin-top: 20px;
+      font-size: 14px;
     }
     p {
       color: rgba(153, 153, 153, 1);
-      font-size: 14px;
+      font-size: 12px;
+      font-weight: 400;
     }
   }
 }
 /* ----------
 jobvacancy
  ---------- */
+.jobvacancy {
+  margin-top: -80px;
+  h6 {
+    font-size: 26px;
+    font-weight: 700;
+    padding-bottom: 24px;
+  }
+  label {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
 
 .jobvacancy,
 .contactus {
@@ -448,6 +475,8 @@ jobvacancy
     padding-bottom: 20px;
   }
   .submit {
+    font-size: 16px;
+    font-weight: 700;
     border: none;
     border-radius: 20px;
     background: linear-gradient(
@@ -456,12 +485,14 @@ jobvacancy
       rgba(37, 119, 221, 1) 100%
     );
     color: white;
-    padding: 5px 0 5px 0;
+    padding: 8px 0 8px 0;
   }
   .cancel {
+    font-size: 16px;
+    font-weight: 700;
     border-radius: 20px;
     border: none;
-    padding: 5px 0 5px 0;
+    padding: 8px 0 8px 0;
   }
 }
 .jobvacancy .career-card-link {
