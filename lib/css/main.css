@@ -54,6 +54,7 @@ section {
   }
 }
 .mini-info {
+  margin-bottom: 12px;
   background: linear-gradient(86.47deg, rgba(41, 231, 231, 0.2) -3.64%, rgba(32, 41, 255, 0.2) 99.64%);
   padding: 5px 8px 5px 8px;
   border: 5px;
@@ -118,6 +119,9 @@ section {
 /* ----------
 about us
  ---------- */
+#aboutus .title-aboutus .mini-info {
+  margin-bottom: 12px;
+}
 #aboutus .title-aboutus h3 {
   font-size: 36px;
   padding-bottom: 30px;
@@ -216,7 +220,7 @@ what we do
 }
 
 #pills-home {
-  background-image: url("source/Image/content-1.png");
+  background-image: url("/../source/Image/content-1.png");
 }
 
 /* ----------
@@ -415,6 +419,10 @@ jobvacancy
 }
 .jobvacancy .cancel,
 .contactus .cancel {
+  color: transparent;
+  background-image: linear-gradient(45deg, rgb(24, 212, 241) 0%, rgb(37, 119, 221) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
   font-size: 16px;
   font-weight: 700;
   border-radius: 20px;
@@ -427,55 +435,90 @@ jobvacancy
 }
 .jobvacancy .career-card-link .career-card {
   color: black;
-  background: rgba(236, 236, 236, 0.4);
-  padding: 10px 5px 5px 30px;
-  border-radius: 7px;
+  background: rgba(236, 236, 236, 0.9);
+  padding: 16px 16px 16px 16px;
+  border-radius: 20px;
 }
 
-.jobvacancy .career-card-link:hover {
-  text-decoration: none;
-}
-.jobvacancy .career-card-link:hover .career-card {
-  color: black;
-  background: rgb(236, 236, 236);
-  padding: 10px 5px 5px 30px;
-  border-radius: 7px;
-}
-
-.career-card {
+.jobvacancy .career-card {
   overflow: hidden;
 }
-.career-card p {
-  padding-left: 20px;
+.jobvacancy .career-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.jobvacancy .career-card p {
+  font-size: 14px;
+  font-weight: 400;
 }
 
-.icon-container i {
-  float: right;
-  font-size: 24px;
+.icon-container {
+  display: flex;
   align-items: center;
+  justify-content: center;
+}
+.icon-container img {
+  width: 24px;
 }
 
 /* ----------
 contact us
  ---------- */
 .contactus {
-  background-image: url("source/Image/contact-us-1.png");
+  background-image: url("/../source/Image/contact-us-1.png");
   color: rgb(255, 255, 255);
-  padding-bottom: 165px;
+  padding-bottom: 83px;
 }
 .contactus .jobtype {
   display: flex;
 }
+.contactus h4 {
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+.contactus input {
+  padding-bottom: 12px;
+}
 
+.contactus .jobtype {
+  margin-bottom: 24px;
+}
 .contactus .jobtype h5 {
   color: rgb(255, 255, 255);
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 400;
   margin: 0;
   padding: 5px 10px;
   margin-right: 5px;
-  border: 1px solid #0aa5bd;
-  border-radius: 5px;
+  border: 0.1px solid #ffffff;
   margin-bottom: 8px;
+}
+
+.control {
+  border: none; /* Menghilangkan border default */
+  border-bottom: 1px solid rgb(255, 255, 255); /* Membuat garis bawah hitam */
+  outline: none;
+  background: none;
+  color: white;
+}
+.control::-moz-placeholder {
+  color: white;
+}
+.control::placeholder {
+  color: white;
+}
+
+.attrachment {
+  display: flex;
+}
+.attrachment img {
+  height: 24px;
+  width: 24px;
+  margin-left: 12px;
+}
+.attrachment p {
+  padding-left: 16px;
 }
 
 /* ----------
@@ -488,7 +531,23 @@ footer
   padding: 30px 0 30px 0;
   justify-content: center;
 }
+#footer h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
 #footer p,
 #footer span {
   font-size: 14px;
+  font-weight: 400;
+}
+#footer .footer-info {
+  display: flex;
+}
+#footer .footer-info img {
+  margin-top: 3px;
+  margin-right: 12px;
+}
+#footer .footer-info p {
+  font-size: 14px;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */

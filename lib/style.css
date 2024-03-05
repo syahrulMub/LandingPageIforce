@@ -31,7 +31,7 @@
 }
 #hero h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: 56px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   color: rgb(255, 255, 255);
@@ -54,10 +54,18 @@
 }
 
 .hero .hero-text h4 span {
-  font-size: 20px;
-  border: 2px solid rgb(31, 21, 117);
-  padding: 0 10px;
+  font-size: 24px;
   border-radius: 10px;
+  border: 2px;
+  border-style: solid;
+  border-image: linear-gradient(
+    45deg,
+    rgba(24, 212, 241, 1) 0%,
+    rgba(37, 119, 221, 1) 100%
+  );
+  padding: 5px 20px;
+  border-radius: 10px;
+  border-image-slice: 10;
 }
 .hero .hero-text {
   font-family: "Inter", sans-serif;
