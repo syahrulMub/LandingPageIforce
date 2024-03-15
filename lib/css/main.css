@@ -232,9 +232,10 @@ our expertize
 .ourexpertize .card {
   height: 100%;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1019607843);
   border: none;
+  z-index: 2;
   font-family: "Inter", sans-serif;
 }
 .ourexpertize .card:hover {

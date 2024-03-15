@@ -298,9 +298,10 @@ our expertize
   .card {
     height: 100%;
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255);
+    box-shadow: 0 0 24px 0 #0000001a;
     border: none;
+    z-index: 2;
     // padding: 15px 15px 15px 15px;
     font-family: "Inter", sans-serif;
     &:hover {
